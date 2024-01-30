@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+		<!-- TODO: replace with built css -->
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<script defer src="main.js" type="module"></script>
+	</head>
+	<body>
+		<div id="container" class="w-screen h-screen flex flex-col">
+			<div>
+				<h1 class="text-2xl">World Gen Tool</h1>
+			</div>
+			<div class="grid grid-rows-1 grid-cols-2 items-strech grow">
+				<div id="left" class="grow flex flex-col border-solid border-2 border-black">
+					<div id="editor" class="grow"></div>
+					<button id="submitButton" class="
+							text-white
+							bg-blue-700
+							hover:bg-blue-800
+						"
+					>Submit</button>
+				</div>
+				<div id="right" class="grow border-solid border-2 border-black">
+					<div id="teView"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
