@@ -33,8 +33,11 @@ let editor = monaco.editor.create(document.getElementById('editor'), {
   autoLayout: true,
 });
 
+window.onresize = function () {
+  editor.layout();
+};
+
 function submit() {
-  // alert(editor.getValue());
   document.getElementById("teView").innerHTML = editor.getValue();
 }
 
