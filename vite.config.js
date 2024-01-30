@@ -1,3 +1,3 @@
 export default {
-  base: "wgf-website"
+  base: "/wgf-website"
 }
