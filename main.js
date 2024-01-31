@@ -5,8 +5,6 @@ import htmlWorker from "monaco-editor/esm/vs/language/html/html.worker?worker";
 import jsWorker from "monaco-editor/esm/vs/language/typescript/ts.worker?worker";
 import editorWorker from "monaco-editor/esm/vs/editor/editor.worker?worker";
 
-import { logout } from "./auth.js";
-
 self.MonacoEnvironment = {
   getWorker: function (workerId, label) {
     switch (label) {
@@ -44,6 +42,3 @@ function submit() {
 }
 
 document.getElementById("submitButton").onclick = submit;
-
-document.getElementById("logoutButton").onclick = logout;
-console.log(document.getElementById("logoutButton").onclick);
