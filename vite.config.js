@@ -1,5 +1,5 @@
 export default {
-  base: "/wgf-website"
+  base: "/wgf-website",
   build: {
     minify: false,
   },
