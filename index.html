@@ -8,12 +8,20 @@
 		<!-- TODO: replace with built css -->
 		<script src="https://cdn.tailwindcss.com"></script>
 
+		<script src="auth.js" type="module"></script>
+
 		<script defer src="main.js" type="module"></script>
 	</head>
 	<body>
 		<div id="container" class="w-screen h-screen flex flex-col p-4">
 			<div>
 				<h1 class="text-2xl">World Gen Tool</h1>
+					<button id="logoutButton" class="
+							text-white
+							bg-blue-700
+							hover:bg-blue-800
+						"
+					>Logout</button>
 			</div>
 			<div class="grid grid-rows-1 grid-cols-2 gap-4 items-strech grow">
 				<div id="left" class="grow flex flex-col border-solid border-2 border-black">
