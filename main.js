@@ -28,7 +28,7 @@ self.MonacoEnvironment = {
 };
 
 let editor = monaco.editor.create(document.getElementById("editor"), {
-  value: "function hello() {\n\talert('Hello world!');\n}",
+  value: "ball(1, 2, 3, 4)",
   language: "javascript",
   autoLayout: true,
 });
@@ -38,7 +38,12 @@ window.onresize = function () {
 };
 
 function submit() {
-  document.getElementById("teView").innerHTML = editor.getValue();
+  eval(editor.getValue());
 }
 
 document.getElementById("submitButton").onclick = submit;
+
+function ball(x, y, z, r) {
+  // TODO: call TE api with these numbers
+  document.getElementById("teView").innerHTML = `x: ${x}<br>y: ${y}<br>z: ${z}<br>r: ${r}`
+}
