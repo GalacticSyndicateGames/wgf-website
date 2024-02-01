@@ -47,3 +47,5 @@ function ball(x, y, z, r) {
   // TODO: call TE api with these numbers
   document.getElementById("teView").innerHTML = `x: ${x}<br>y: ${y}<br>z: ${z}<br>r: ${r}`
 }
+
+window.ball = ball
